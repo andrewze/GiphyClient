@@ -18,3 +18,7 @@ Kingfisher           [image caching]
 I don't know why collectionView display no image. I working currently on this problem=)
 
 ## Stashed changes
+
+## Author
+
+Andrei Zeniukevich
