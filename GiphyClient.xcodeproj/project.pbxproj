@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		AF2EAA3721786F6B000CF69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2EAA3621786F6B000CF69D /* AppDelegate.swift */; };
-		AF2EAA3921786F6B000CF69D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2EAA3821786F6B000CF69D /* ViewController.swift */; };
 		AF2EAA3C21786F6B000CF69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2EAA3A21786F6B000CF69D /* Main.storyboard */; };
 		AF2EAA3E21786F6D000CF69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2EAA3D21786F6D000CF69D /* Assets.xcassets */; };
 		AF2EAA4121786F6D000CF69D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2EAA3F21786F6D000CF69D /* LaunchScreen.storyboard */; };
+		AF2EAA4D21787115000CF69D /* GiphyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2EAA4C21787115000CF69D /* GiphyCollectionViewCell.swift */; };
+		AF2EAA4F2178714D000CF69D /* GiphyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2EAA4E2178714D000CF69D /* GiphyModel.swift */; };
+		AF2EAA5121787175000CF69D /* GiphyEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2EAA5021787175000CF69D /* GiphyEndpoint.swift */; };
+		AF2EAA532178719F000CF69D /* GiphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2EAA522178719F000CF69D /* GiphyViewController.swift */; };
+		AF2EAA56217873A4000CF69D /* GiphyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2EAA55217873A4000CF69D /* GiphyViewModel.swift */; };
+		B151F4D71AFBAF7930CB1797 /* Pods_GiphyClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FF8DB332036ACD37409F82 /* Pods_GiphyClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C886124C01E7E625A7D6F00 /* Pods-GiphyClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphyClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GiphyClient/Pods-GiphyClient.debug.xcconfig"; sourceTree = "<group>"; };
+		30FF8DB332036ACD37409F82 /* Pods_GiphyClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiphyClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D9DFCBA96913901602BAAE /* Pods-GiphyClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphyClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-GiphyClient/Pods-GiphyClient.release.xcconfig"; sourceTree = "<group>"; };
 		AF2EAA3321786F6B000CF69D /* GiphyClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiphyClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2EAA3621786F6B000CF69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF2EAA3821786F6B000CF69D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF2EAA3B21786F6B000CF69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF2EAA3D21786F6D000CF69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF2EAA4021786F6D000CF69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF2EAA4221786F6D000CF69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2EAA4C21787115000CF69D /* GiphyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF2EAA4E2178714D000CF69D /* GiphyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyModel.swift; sourceTree = "<group>"; };
+		AF2EAA5021787175000CF69D /* GiphyEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyEndpoint.swift; sourceTree = "<group>"; };
+		AF2EAA522178719F000CF69D /* GiphyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyViewController.swift; sourceTree = "<group>"; };
+		AF2EAA55217873A4000CF69D /* GiphyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B151F4D71AFBAF7930CB1797 /* Pods_GiphyClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15318C89F9E29BC129451C29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C886124C01E7E625A7D6F00 /* Pods-GiphyClient.debug.xcconfig */,
+				45D9DFCBA96913901602BAAE /* Pods-GiphyClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3F47C0D7966CB81A42832A02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30FF8DB332036ACD37409F82 /* Pods_GiphyClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF2EAA2A21786F6B000CF69D = {
 			isa = PBXGroup;
 			children = (
 				AF2EAA3521786F6B000CF69D /* GiphyClient */,
 				AF2EAA3421786F6B000CF69D /* Products */,
+				15318C89F9E29BC129451C29 /* Pods */,
+				3F47C0D7966CB81A42832A02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,58 @@
 		AF2EAA3521786F6B000CF69D /* GiphyClient */ = {
 			isa = PBXGroup;
 			children = (
+				AF2EAA5421787380000CF69D /* ModelView */,
+				AF2EAA4B217870F3000CF69D /* View */,
+				AF2EAA4A217870E9000CF69D /* Model */,
+				AF2EAA49217870D8000CF69D /* Endpoints */,
+				AF2EAA48217870AE000CF69D /* ViewControllers */,
 				AF2EAA3621786F6B000CF69D /* AppDelegate.swift */,
-				AF2EAA3821786F6B000CF69D /* ViewController.swift */,
 				AF2EAA3A21786F6B000CF69D /* Main.storyboard */,
 				AF2EAA3D21786F6D000CF69D /* Assets.xcassets */,
 				AF2EAA3F21786F6D000CF69D /* LaunchScreen.storyboard */,
 				AF2EAA4221786F6D000CF69D /* Info.plist */,
 			);
 			path = GiphyClient;
+			sourceTree = "<group>";
+		};
+		AF2EAA48217870AE000CF69D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF2EAA522178719F000CF69D /* GiphyViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AF2EAA49217870D8000CF69D /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				AF2EAA5021787175000CF69D /* GiphyEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		AF2EAA4A217870E9000CF69D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF2EAA4E2178714D000CF69D /* GiphyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF2EAA4B217870F3000CF69D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF2EAA4C21787115000CF69D /* GiphyCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF2EAA5421787380000CF69D /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				AF2EAA55217873A4000CF69D /* GiphyViewModel.swift */,
+			);
+			path = ModelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF2EAA4521786F6D000CF69D /* Build configuration list for PBXNativeTarget "GiphyClient" */;
 			buildPhases = (
+				5A371D0077FC2D73C723F063 /* [CP] Check Pods Manifest.lock */,
 				AF2EAA2F21786F6B000CF69D /* Sources */,
 				AF2EAA3021786F6B000CF69D /* Frameworks */,
 				AF2EAA3121786F6B000CF69D /* Resources */,
+				5EE91AE4467626BF5E97DDB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +208,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A371D0077FC2D73C723F063 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GiphyClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EE91AE4467626BF5E97DDB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GiphyClient/Pods-GiphyClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ModelMapper/Moya_ModelMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ModelMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GiphyClient/Pods-GiphyClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF2EAA2F21786F6B000CF69D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2EAA3921786F6B000CF69D /* ViewController.swift in Sources */,
+				AF2EAA532178719F000CF69D /* GiphyViewController.swift in Sources */,
+				AF2EAA5121787175000CF69D /* GiphyEndpoint.swift in Sources */,
+				AF2EAA56217873A4000CF69D /* GiphyViewModel.swift in Sources */,
+				AF2EAA4F2178714D000CF69D /* GiphyModel.swift in Sources */,
+				AF2EAA4D21787115000CF69D /* GiphyCollectionViewCell.swift in Sources */,
 				AF2EAA3721786F6B000CF69D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +423,7 @@
 		};
 		AF2EAA4621786F6D000CF69D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C886124C01E7E625A7D6F00 /* Pods-GiphyClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,7 +433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Andrewzen.GiphyClient;
+				PRODUCT_BUNDLE_IDENTIFIER = test.GiphyClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,6 +442,7 @@
 		};
 		AF2EAA4721786F6D000CF69D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D9DFCBA96913901602BAAE /* Pods-GiphyClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,7 +452,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Andrewzen.GiphyClient;
+				PRODUCT_BUNDLE_IDENTIFIER = test.GiphyClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
