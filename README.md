@@ -2,10 +2,10 @@
 # GiphyClient
 
 ## Run
-
-pod install\
+<pre>
+pod install
 run GiphyClient.xcworkspace
-
+</pre>
 ## Used frameworks
 <pre>
 RxSwift (4.3.1), RxCocoa (4.3.1)    // [reactive programming]
