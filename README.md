@@ -8,10 +8,10 @@ run GiphyClient.xcworkspace
 
 ## Used frameworks
 
-RxSwift, RxCocoa     [reactive programming]\
-ModelMapper          [model mapping]\
-Moya                 [networking]\
-Kingfisher           [image caching]
+RxSwift (4.3.1), RxCocoa (4.3.1)     [reactive programming]\
+ModelMapper (9.0.0)         [model mapping]\
+Moya (11.0.2)                [networking]\
+Kingfisher (4.10.0)       [image caching]
 
 ## Unsolved problems
 
